@@ -10,6 +10,6 @@ Proyecto Banco
 	3.4: Password: root	
 
 4. una vez creada la BD y visualizada en el gestor, colocar en PowerShell,  el siguiente
-   comando: "docker-compose up --build" (el archivo docker-compose y Dockerfile estan dentrop del mismo)
-5. con ello se levantara el contenedor del proyecto y su motor de base de datos, creando asi la tabla
-6. para la prueba podran acceder a podran acceder desde el siguiente link: https://api.postman.com/collections/16779296-f2c09417-5754-41af-8a58-e5ebab88e8ea?access_key=PMAT-01HKNBEPMAQDX8GV4NYM73JGJV
+   comando: "docker-compose up --build" (el archivo docker-compose y Dockerfile están dentro del mismo)
+5. con ello se levantara el contenedor del proyecto y su motor de base de datos, creando así la tabla
+6. para la prueba podrán acceder a podrán acceder desde el siguiente link: https://api.postman.com/collections/16779296-f2c09417-5754-41af-8a58-e5ebab88e8ea?access_key=PMAT-01HKNBEPMAQDX8GV4NYM73JGJV
