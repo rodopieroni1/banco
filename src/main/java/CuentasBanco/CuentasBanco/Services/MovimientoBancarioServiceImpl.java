@@ -22,7 +22,6 @@ public class MovimientoBancarioServiceImpl implements IMovimientoBancarioService
 	public String crear(MovimientosCuentaBancariaRest movimientoCuentaBancariaRest) {
 		MovimientosCuentasBancarias movimientoCuentaBancario = new MovimientosCuentasBancarias();
 		final CuentaBancaria idCuenta = cuentaBancariaDao.findByIdCuenta(movimientoCuentaBancariaRest.getIdCuenta());
-		//hacer aqui la comprobacion del tipo de transferencia
 		if(movimientoCuentaBancariaRest.getDescripcionMovimiento() == "Deposito" ||   movimientoCuentaBancariaRest.getDescripcionMovimiento() == "Deposito"  ) {
 			try {
 			movimientoCuentaBancario.setIdMovimientos(movimientoCuentaBancariaRest.getIdMovimiento());

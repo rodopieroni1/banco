@@ -20,6 +20,7 @@ public class MovimientosCuentaBancariaControllers {
 	@Autowired
 	IMovimientoBancarioService imovCuentaBancariaService;
 	
+	
 	@ResponseStatus(HttpStatus.OK)
 	@PostMapping(value = "/moveAccounts")
 	public String crear(@RequestBody MovimientosCuentaBancariaRest request){
