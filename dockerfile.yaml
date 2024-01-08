@@ -1,5 +1,0 @@
-version: '3.7'
-FROM maven:4.0.0-openjdk-17-slim AS build 
-COPY src /Documents/Banco/Cuentas-Banco/src
-COPY pom.xml /Documents/Banco/Cuentas-Banco
-RUN mvn -f /Documents/Banco/Cuentas-Banco/pom.xml clean package

@@ -22,6 +22,8 @@ public class MovimientoBancarioServiceImpl implements IMovimientoBancarioService
 	public String crear(MovimientosCuentaBancariaRest movimientoCuentaBancariaRest) {
 		MovimientosCuentasBancarias movimientoCuentaBancario = new MovimientosCuentasBancarias();
 		final CuentaBancaria idCuenta = cuentaBancariaDao.findByIdCuenta(movimientoCuentaBancariaRest.getIdCuenta());
+		//hacer aqui la comprobacion del tipo de transferencia
+		if(movimientoCuentaBancariaRest.getDescripcionMovimiento() == "Deposito" ||   movimientoCuentaBancariaRest.getDescripcionMovimiento() == "Deposito"  ) {
 			try {
 			movimientoCuentaBancario.setIdMovimientos(movimientoCuentaBancariaRest.getIdMovimiento());
 			movimientoCuentaBancario.setDescripcionMovimiento(movimientoCuentaBancariaRest.getDescripcionMovimiento());
@@ -36,6 +38,8 @@ public class MovimientoBancarioServiceImpl implements IMovimientoBancarioService
 			throw e;
 		}
 		return String.valueOf(movimientoCuentaBancario.getIdMovimientos());
+		}
+		return "Los movimientos deben ser por Retiro o Extraccion";
 	}
 
 	public Long balance(Long idCuenta) {
