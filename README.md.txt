@@ -13,3 +13,5 @@ Proyecto Banco
    comando: "docker-compose up --build" (el archivo docker-compose y Dockerfile están dentro del mismo)
 5. con ello se levantara el contenedor del proyecto y su motor de base de datos, creando así la tabla
 6. para la prueba podrán acceder a podrán acceder desde el siguiente link: https://api.postman.com/collections/16779296-f2c09417-5754-41af-8a58-e5ebab88e8ea?access_key=PMAT-01HKNBEPMAQDX8GV4NYM73JGJV
+7. Cabe aclarar que se deckerizo para que el proyecto funcione en varias instancias, es decir puede funcionar en varios puertos, 
+ver en la imagen de docker a cual puerto esta haciendo referencia en el momento de la ejecucion 

@@ -22,7 +22,7 @@ public class MovimientoBancarioServiceImpl implements IMovimientoBancarioService
 	public String crear(MovimientosCuentaBancariaRest movimientoCuentaBancariaRest) {
 		MovimientosCuentasBancarias movimientoCuentaBancario = new MovimientosCuentasBancarias();
 		final CuentaBancaria idCuenta = cuentaBancariaDao.findByIdCuenta(movimientoCuentaBancariaRest.getIdCuenta());
-		if(movimientoCuentaBancariaRest.getDescripcionMovimiento() == "Deposito" ||   movimientoCuentaBancariaRest.getDescripcionMovimiento() == "Deposito"  ) {
+		if(movimientoCuentaBancariaRest.getDescripcionMovimiento()== "Extraccion" ||   movimientoCuentaBancariaRest.getDescripcionMovimiento() == "Retiro"  ) {
 			try {
 			movimientoCuentaBancario.setIdMovimientos(movimientoCuentaBancariaRest.getIdMovimiento());
 			movimientoCuentaBancario.setDescripcionMovimiento(movimientoCuentaBancariaRest.getDescripcionMovimiento());
