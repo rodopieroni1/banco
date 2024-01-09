@@ -22,7 +22,7 @@ public class MovimientosCuentaBancariaControllers {
 	
 	
 	@ResponseStatus(HttpStatus.OK)
-	@PostMapping(value = "/moveAccounts")
+	@PostMapping(value = "/transaction")
 	public String crear(@RequestBody MovimientosCuentaBancariaRest request){
 		return imovCuentaBancariaService.crear(request);
 	}

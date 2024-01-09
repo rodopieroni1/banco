@@ -3,7 +3,7 @@ services:
   cuentas-banco-app:
     #container_name: banco-app
     image: cuentas-banco-app
-    restart: always
+    #restart: always
     build: . 
     ports:
       - 8000-8999:8080
